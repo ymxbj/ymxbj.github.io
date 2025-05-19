@@ -53,13 +53,10 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
     <!--  TexGaussian  -->
-    <tr onmouseout="texgaussian_stop()" onmouseover="texgaussian_start()" bgcolor="#ffffd0">
+    <tr bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='texgaussian_image'><video  width=100% muted autoplay loop>
-          <source src=" " type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
+          <div class="two" id='texgaussian_image'></div>
           <img src='images/TexGaussian.jpg' width=100%>
         </div>
         <script type="text/javascript">
@@ -101,14 +98,51 @@
       </td>
     </tr>
 
-<!--  OctFusion   -->
-    <tr onmouseout="octfusion_stop()" onmouseover="octfusion_start()" bgcolor="#ffffd0">
+    <!--  TexGarment  -->
+    <tr>
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='octfusion_image'><video  width=100% muted autoplay loop>
-          <source src=" " type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
+          <div class="two" id='texgarment_image'></div>
+          <img src='images/TexGarment.png' width=100%>
+        </div>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://cvpr.thecvf.com/virtual/2025/poster/34341">
+          <span class="papertitle">TexGarment: Consistent Garment UV Texture Generation via Efficient 3D Structure-Guided Diffusion Transformer</span>
+        </a>
+        <br>
+        Jialun Liu,
+        Jinbo Wu,
+        Xiaobo Gao,
+        JiaKui Hu,
+        <strong>Bojun Xiong</strong>,
+        Xing Liu,
+        Chen Zhao,
+        Hongbin Pei,
+        Haocheng Feng,
+        Yingying Li,
+        Errui Ding,
+        Jingdong Wang
+        <br>
+        <em>CVPR</em>, 2025
+        <br>
+        <a href="https://cvpr.thecvf.com/virtual/2025/poster/34341">project page</a>
+        /
+        <a href="">paper</a>
+        /
+        <a href="">code</a>
+        <p></p>
+        <p>
+        An efficient method which leverages a pre-trained text-to-image diffusion Transformer and introduces structural information to generate 3D-consistent garment textures.
+        </p>
+      </td>
+    </tr>
+
+<!--  OctFusion   -->
+    <tr bgcolor="#ffffd0">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='octfusion_image'></div>
           <img src='images/OctFusion.jpg' width=100%>
         </div>
         <script type="text/javascript">
@@ -149,13 +183,10 @@
     </tr>
 
     <!--  VecFontSDF   -->
-    <tr onmouseout="VecFontSDF_stop()" onmouseover="VecFontSDF_start()">
+    <tr>
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
-              <div class="two" id='vecfontsdf_image'><video  width=100% muted autoplay loop>
-              <source src=" " type="video/mp4">
-              Your browser does not support the video tag.
-              </video></div>
+              <div class="two" id='vecfontsdf_image'></div>
               <img src='images/VecFontSDF.jpg' width=100%>
             </div>
             <script type="text/javascript">
