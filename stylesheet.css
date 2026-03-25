@@ -32,8 +32,11 @@ a {
   text-decoration: none;
 }
 
-a:focus,
 a:hover {
+  color: var(--accent-hover);
+}
+
+a:focus-visible {
   color: var(--accent-hover);
 }
 
@@ -183,6 +186,17 @@ h3 {
 
 .link-disabled {
   cursor: default;
+}
+
+.link-disabled:focus,
+.link-disabled:focus-visible {
+  color: var(--muted);
+}
+
+.link-disabled:hover,
+.link-disabled:hover:focus,
+.link-disabled:hover:focus-visible {
+  color: var(--accent-hover);
 }
 
 .info-card {
